@@ -1,0 +1,24 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowListAllBuckets",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListAllMyBuckets"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "AdminFullExamAccess",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::alexander-school-exam-571493306003-eu-north-1-an",
+                "arn:aws:s3:::alexander-school-exam-571493306003-eu-north-1-an/*"
+            ]
+        }
+    ]
+}

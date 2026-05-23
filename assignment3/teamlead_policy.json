@@ -1,0 +1,42 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateGroup",
+                "iam:AddUserToGroup",
+                "iam:RemoveUserFromGroup",
+                "iam:GetGroup",
+                "iam:ListGroups",
+                "iam:ListGroupsForUser",
+                "iam:AttachUserPolicy",
+                "iam:ListUsers",
+                "iam:CreateUser"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "Statement2",
+            "Effect": "Deny",
+            "Action": [
+                "iam:DeleteGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "Statement3",
+            "Effect": "Deny",
+            "Action": [
+                "iam:AttachGroupPolicy"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "ArnEquals": {
+                    "iam:PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+                }
+            }
+        }
+    ]
+}

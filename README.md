@@ -74,6 +74,7 @@ iam-policy/
 ### Teacher Policy
 
 **Policy name:** `TeacherS3Policy`
+
 **File:** `assignment1/teacher_policy.json`
 
 **Permissions:**
@@ -92,6 +93,7 @@ iam-policy/
 ### Student Policy
 
 **Policy name:** `StudentS3Policy`
+
 **File:** `assignment1/student_policy.json`
 
 **Permissions:**
@@ -125,25 +127,25 @@ iam-policy/
 ### Assignment 1 — S3 Policies
 
 **Teacher Policy — Created in IAM Console**
-images/teacher_policy.png
+![teacher_policy](images/teacher_policy.png)
 
 **Student Policy — Created in IAM Console**
-images/student_policy.png
+![student_policy](images/student_policy.png)
 
 images/studentUploadfailed.png
 
 **Administrator Policy — Created in IAM Console**
-images/adminS3policy.png
+![admin policy](images/adminS3policy.png)
 
 **teacher1 — Upload Test (Expected: Allowed)**
-images/teacher_upload.png
+![teacher upload](images/teacher_upload.png)
 
-images/TeacherS3AccessPolicy.png
+![Teacher Access](images/TeacherS3AccessPolicy.png)
 
 **teacher1 — Delete Test (Expected: Denied)**
-images/teacher1denied.png
+![teacher test error](images/teacher1denied.png)
 
-images/user_group_ass1.png
+![user_group](images/user_group_ass1.png)
 
 ---
 
@@ -176,9 +178,9 @@ images/user_group_ass1.png
 ### Assignment 2 — IAM User Management Policy
 
 **Junior Admin Policy — Created in IAM Console**
-images/Assignment2_policy.png
+![Assignment 2 Policy](images/Assignment2_policy.png)
 
-images/jay-cloud-dev_deletePolicy.png
+![delete policy test](images/jay-cloud-dev_deletePolicy.png)
 
 
 
@@ -211,8 +213,8 @@ images/jay-cloud-dev_deletePolicy.png
 
 ### Screenshots
 
-images/teamlead_create_user.png
+![create user](images/teamlead_create_user.png)
 
-images/teamlead_deletegroup.png
+![delete user](images/teamlead_deletegroup.png)
 
-images/teamlead_getgroup.png
+![get group](images/teamlead_getgroup.png)
